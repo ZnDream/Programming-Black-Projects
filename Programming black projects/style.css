@@ -1,0 +1,135 @@
+.team {
+    margin: 75px 0;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #333;
+    padding-bottom: 10px;
+}
+
+h1:after {
+    content: '';
+    background: #333;
+    display: block;
+    height: 3px;
+    width: 300px;
+    margin: 10px auto;
+}
+
+img {
+    max-width: 350px;
+    max-height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.profile {
+    margin-top: 25px;
+}
+
+.profile h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.profile h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.img-box:after {
+    content: '';
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* set a default dark semi-transparent background */
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.img-box ul {
+    margin: 0;
+    padding: 420px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.img-box ul li {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #0d0a0a;
+    border-radius: 50%;
+    margin: 3px;
+    padding: 0px;
+    display: inline-block;
+}
+
+.img-box a {
+    color: #fff;
+}
+
+.img-box:hover::after {
+    opacity: 1;
+}
+
+.img-box:hover ul {
+    opacity: 1;
+}
+
+.img-box a:hover li
+{
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.img-box:after, .img-box ul, .img-box ul li
+{
+    transition: all 0.5s ease-in-out;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #f8f9fa;  /* Light gray background color */
+    padding: 20px 0;            /* Padding for top and bottom */
+    border-top: 1px solid #e7e7e7; /* A subtle top border */
+}
+
+.footer h5 {
+    font-weight: bold;  /* Makes the header titles (like "Authors") bold */
+    margin-top: 0;     /* Removes the default margin at the top */
+    margin-bottom: 15px; /* Margin between the title and the content below */
+}
+
+.footer p {
+    margin-bottom: 0;  /* Removes the default margin at the bottom for paragraph */
+}
+
+.footer ul {
+    padding-left: 0;    /* Removes the default padding */
+}
+
+.footer ul li {
+    list-style-type: none;  /* Removes the default list bullet points */
+    margin-bottom: 5px;    /* Adds some space between the authors */
+}
+
+.footer a {
+    color: #007bff;       /* Bootstrap's default blue color for links */
+    text-decoration: none; /* Removes the default underline from the links */
+}
+
+.footer a:hover {
+    color: #0056b3;       /* Darker blue color for hover effect on links */
+    text-decoration: underline; /* Adds an underline on hover */
+}
